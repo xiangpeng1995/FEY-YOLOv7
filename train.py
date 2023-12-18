@@ -502,7 +502,7 @@ def train(hyp,  # path/to/hyp.yaml or hyp dictionary
 def parse_opt(known=False):
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', type=str, default=ROOT / 'weight/yolov3.pt', help='initial weights path')
-    parser.add_argument('--cfg', type=str, default='configs/FEY-YOLOv7.yaml', help='model.yaml path')
+    parser.add_argument('--cfg', type=str, default='yolov7/FEY-YOLOv7.yaml', help='model.yaml path')
     parser.add_argument('--data', type=str, default=ROOT / 'mydata/Fatigue0/data.yaml', help='dataset.yaml path')
     parser.add_argument('--hyp', type=str, default=ROOT / 'data/hyps/hyp.scratch-low.yaml', help='hyperparameters path')
     parser.add_argument('--epochs', type=int, default=100)
